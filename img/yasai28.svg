@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.357" height="36.044" viewBox="0 0 39.357 36.044">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="楕円形_8" data-name="楕円形 8" cx="12.295" cy="15.896" rx="12.295" ry="15.896" transform="matrix(0.439, -0.899, 0.899, 0.439, 1374.426, 419.527)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_154" data-name="グループ 154" transform="translate(-1374.426 -397.429)">
+    <g id="グループ_152" data-name="グループ 152">
+      <ellipse id="楕円形_23" data-name="楕円形 23" cx="12.295" cy="15.896" rx="12.295" ry="15.896" transform="matrix(0.439, -0.899, 0.899, 0.439, 1374.426, 419.527)" fill="#ab8b06"/>
+      <g id="グループ_51" data-name="グループ 51">
+        <g id="グループ_50" data-name="グループ 50" clip-path="url(#clip-path)">
+          <g id="グループ_151" data-name="グループ 151">
+            <g id="グループ_149" data-name="グループ 149">
+              <path id="パス_182" data-name="パス 182" d="M1409.67,417.823c-2.979,6.1-11.79,7.927-19.679,4.077s-11.871-11.92-8.892-18.023,11.79-7.927,19.679-4.069S1412.653,411.726,1409.67,417.823Z" fill="#c6a601"/>
+            </g>
+            <g id="グループ_150" data-name="グループ 150">
+              <ellipse id="楕円形_24" data-name="楕円形 24" cx="12.295" cy="15.896" rx="12.295" ry="15.896" transform="matrix(0.439, -0.899, 0.899, 0.439, 1377.629, 411.957)" fill="#d6b013"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="グループ_153" data-name="グループ 153" opacity="0.35">
+      <path id="パス_183" data-name="パス 183" d="M1389.261,404.57s4.261-2.113,7.79.28,2.3,6.54-1.141,5.547C1395.91,410.4,1387.562,410.656,1389.261,404.57Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

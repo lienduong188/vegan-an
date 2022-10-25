@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+@media screen and (min-width:769px){
+	.pc, .pc_tab{
+		display: inherit;
+	}
+	.sp, .tab{
+		display: none;
+	}
+}
+@media screen and (min-width: 1100px) and (max-width:1280px){
+	.form__wrap{
+		background-image:url("../img/bg-form2.png");
+	}
+	.form__box{
+		width: 75%;
+		margin-top: 200px;
+	}
+}
+@media screen and (min-width: 1000px) and (max-width:1110px){
+	.form__wrap{
+		background-image:url("../img/bg-form3.png");
+	}
+	.form__box{
+		width: 75%;
+		margin-top: 230px;
+	}
+}
+@media screen and (min-width:769px) and (max-width:999px){
+	.tab, .pc_tab{
+		display: inherit;
+	}
+	.sp, .pc{
+		display: none;
+	}
+}
+@media screen and (min-width:630px) and (max-width:768px){
+	.main_cb h1{
+		font-size: 2.4rem;
+	}
+	#concept{
+		margin-top: 50vh;
+	}
+}
+@media screen and (min-width:530px) and (max-width:629px){
+	.main_cb h1{
+		font-size: 1.4rem;
+	}
+	#concept{
+		margin-top: 30vh;
+	}
+}
+@media screen and (min-width:430px) and (max-width:529px){
+	.main_cb h1{
+		font-size: 1.4rem;
+	}
+	#concept{
+		margin-top: 10vh;
+	}
+}
+@media screen and (max-width:768px){
+	.sp{
+		display: inherit;
+	}
+	.pc, .tab, .pc_tab{
+		display: none;
+	}
+}
+/*全デバイス共通のスタイル*/
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html, body, #wrapper{
+	width: 100%;
+	height: 100%;
+	font-size: 1.2rem;
+	color: #705A4F;
+	font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	letter-spacing: 0.2rem;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+span.marker {
+  padding-bottom: 0!important;
+}
+/*ここからヘッダーボタン*/
+.btn-1 {
+  background-image: linear-gradient(to right, #44ea76 50%, #39fad7 100%);
+}
+.fade_y {
+	transform: translateY(3%);
+	opacity: 0;
+	transition: .3s;
+}
+.fade_y.on {
+	opacity: 1;
+	transform: translateY(0%);
+}
+.ac {
+  position: relative;
+}
+.ac::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  opacity: 0;
+}
+.ac.green::after {
+  background: url("../img/hvr-action.png")no-repeat center;
+  background-size: 100%;
+}
+@media screen and (min-width: 897px) {
+  .ac:hover {
+    animation: furu 2.5s forwards;
+  }
+  .ac:hover::after {
+    opacity: 1;
+  }
+}
+@keyframes furu {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  2% {
+    transform: translate(2px, 2px) rotateZ(2deg);
+  }
+  4% {
+    transform: translate(0px, 2px) rotateZ(0deg);
+  }
+  6% {
+    transform: translate(2px, 0px) rotateZ(-2deg);
+  }
+  8% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  10% {
+    transform: translate(2px, 2px) rotateZ(2deg);
+  }
+  12% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  14% {
+    transform: translate(2px, 0px) rotateZ(-2deg);
+  }
+  16% {
+    transform: translate(0px, 2px) rotateZ(0deg);
+  }
+  18% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+}
+/*ここまでヘッダーボタン*/
+@keyframes anime00 {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+.yasai{
+  position:absolute;
+  animation-name:animeHeader;
+  animation-duration:1s;
+}
+
+@keyframes animeHeader {
+0% {
+    transform:translateY(-100px);
+    opacity:0;
+  }
+    75% {
+    transform:translateY(-100px);
+    opacity:0;
+  }
+    80% {
+    transform:translateY(-100px);
+    opacity:1;
+  }
+  100% {
+    transform:translateY(0);
+  }
+}
+#header_yasai #yasai01{
+  width: 9.5vw;
+  animation-delay: 0.2s;
+  top: -2vw;
+  left: 43vw;
+}
+
+#header_yasai #yasai02 {
+  width: 5vw;
+  animation-delay: 0.3s;
+  right: 40vw;
+  top:0vw;
+}
+#header_yasai #yasai03 {
+  width: 7.5vw;
+  animation-delay: 0.4s;
+  top:3vw;
+  right:31vw;
+}
+#header_yasai #yasai04 {
+  width: 6vw;
+  animation-delay: 0.5s;
+  top:11vw;
+  right: 23.5vw;
+}
+#header_yasai #yasai05 {
+  width: 7vw;
+  animation-delay: 0.6s;
+  top:25vw;
+  right:21.5vw;
+}
+#header_yasai #yasai06 {
+  width: 10vw;
+  animation-delay: 0.7s;
+  right: 25vw;
+  top:36vw;
+}
+#header_yasai #yasai07 {
+  width: 14vw;
+  animation-delay: 0.2s;
+  right: 36vw;
+  top: 46.5vw;
+}
+#header_yasai #yasai08 {
+  width: 6.6vw;
+  animation-delay: 0.3s;
+  left: 40vw;
+  top: 46.9vw;
+}
+#header_yasai #yasai09 {
+  width: 9.5vw;
+  animation-delay: 0.4s;
+  top: 37.2vw;
+  left:28vw;
+}
+#header_yasai #yasai10 {
+  width: 5vw;
+  animation-delay: 0.5s;
+  top: 28vw;
+  left: 24vw;
+}
+#header_yasai #yasai11 {
+  width: 5.4vw;
+  animation-delay: 0.6s;
+  left:23.5vw;
+  top:14vw;
+}
+#header_yasai #yasai12 {
+  width: 11.5vw;
+  animation-delay: 0.7s;
+  left:29.5vw;
+  top:3vw;
+}
+#header_yasai #yasai13 {
+  width: 3.5vw;
+  animation-delay: 0.8s;
+  left:32.5vw;
+  top:11vw;
+}
+#header_yasai #yasai14 {
+  width: 4vw;
+  animation-delay: 0.8s;
+  left:19.1vw;
+  top:29vw;
+}
+#header_yasai #yasai15 {
+  width: 2vw;
+  animation-delay: 0.8s;
+  left:48.5vw;
+  top:46.7vw;
+}
+#header_yasai #yasai16 {
+  width: 2vw;
+  animation-delay: 0.8s;
+  left:41vw;
+  top:6vw;
+}
+#header_yasai #yasai17 {
+  width: 2vw;
+  animation-delay: 0.8s;
+  right:31.5vw;
+  top:11vw;
+}
+#header_yasai #yasai18 {
+  width: 4vw;
+  animation-delay: 0.8s;
+  left:29vw;
+  top:45.7vw;
+}
+#header_yasai #yasai19 {
+  width: 2.4vw;
+  animation-delay: 0.8s;
+  left:26.3vw;
+  top:6.5vw;
+}
+#header_yasai #yasai20 {
+  width: 1.4vw;
+  animation-delay: 0.8s;
+  left:37.7vw;
+  top:42.8vw;
+}
+#header_yasai #yasai21 {
+  width: 2.3vw;
+  animation-delay: 0.8s;
+  right:28vw;
+  top:30vw;
+}
+#header_yasai #yasai22 {
+  width: 3.4vw;
+  animation-delay: 0.8s;
+  right:34vw;
+  top:50.5vw;
+}
+#header_yasai #yasai23 {
+  width: 5vw;
+  animation-delay: 0.8s;
+  right:20.4vw;
+  top:41vw;
+}
+#header_yasai #yasai24 {
+  width: 5vw;
+  animation-delay: 0.8s;
+  left:18vw;
+  top:22vw;
+}
+#header_yasai #yasai25 {
+  width: 2.5vw;
+  animation-delay: 0.8s;
+  right:27vw;
+  top:4vw;
+}
+#header_yasai #yasai26 {
+  width: 5.5vw;
+  animation-delay: 0.8s;
+  right:19vw;
+  top:35vw;
+}
+#header_yasai #yasai27 {
+  width: 5.5vw;
+  animation-delay: 0.8s;
+  right:28.7vw;
+  top:48vw;
+}
+#header_yasai #yasai28 {
+  width: 2vw;
+  animation-delay: 0.8s;
+  right:27vw;
+  top:20.6vw;
+}
+/*ここまでヘッダー*/
+.t_green{
+	color: #EEF6E2;
+}
+.t_white{
+	color: #E5F2D4;
+}
+.t_green2{
+	color: #BADD94;
+}

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+/*ここから画像の拡大*/
+.zoomIn img{
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+.zoomIn a:hover img{
+	transform: scale(1.2);
+}
+.mask{
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+	border-radius: 80px;
+	margin-top: -17px;
+}
+/*ここまで画像の拡大*/
+
+/*ここからアニメーションの設定*/
+.fadeUp{
+animation-name: fadeUpAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes fadeUpAnime{
+  from{
+    opacity: 0;
+  transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+.flipLeftTop{
+animation-name: flipLeftTopAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes flipLeftTopAnime{
+  from{
+   transform: translate(-20px,80px) rotate(-15deg);
+ 	opacity: 0;
+  }
+  to{
+   transform: translate(0,0) rotate(0deg);
+	opacity: 1;
+  }
+}
+
+.zoomIn{
+	animation-name: zoomInAnime;
+	animation-duration:0.5s;
+	animation-fill-mode:forwards;
+}
+@keyframes zoomInAnime{
+  from{
+	transform: scale(0.6);
+	opacity: 0;
+  }
+  to{
+    transform: scale(1);
+	opacity: 1;
+  }
+}
+
+.fadeIn{
+animation-name: fadeInAnime;
+animation-duration:1.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes fadeInAnime{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.flipLeftTopTrigger, .fadeUpTrigger, .fadeInTrigger, .zoomInTrigger{
+    opacity: 0;
+}
+/*アニメーション１回分の時間の長さ*/
+.change-time05{
+  animation-duration: 0.5s;
+}
+.change-time1{
+  animation-duration: 1s;
+}
+.change-time15{
+  animation-duration: 1.5s;
+}
+.change-time2{
+ animation-duration: 2s;
+}
+.change-time25{
+animation-duration: 2.5s;
+}
+/*動きをループさせる*/
+.count2{
+animation-iteration-count: 2;
+}
+.countinfinite{
+ animation-iteration-count: infinite;
+}
+/*アニメーションの開始を遅らせる*/
+.delay-time05{
+animation-delay: 0.5s;
+}
+.delay-time07{
+animation-delay: 0.7s;
+}
+.delay-time1{
+animation-delay: 1s;
+}
+.delay-time15{
+animation-delay: 1.5s;
+}
+.delay-time2{
+animation-delay: 2s;
+}
+.delay-time25{
+  animation-delay: 2.5s;
+}
+/*アニメーションの進行具合を操作する*/
+.timing-ease{
+animation-timing-function:ease;
+}
+.timing-ease-in{
+animation-timing-function:ease-in;
+}
+.timing-ease-out{
+animation-timing-function:ease-out;
+}
+.timing-ease-in-out{
+animation-timing-function:ease-in-out;  
+}
+.timing-linear{
+animation-timing-function:linear; 
+}
+.timing-steps{
+animation-timing-function:steps(4, end);  
+}
+.timing-cubic-bezier{
+animation-timing-function:cubic-bezier(.17,.67,.67,.51);  
+}
